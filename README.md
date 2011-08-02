@@ -9,7 +9,7 @@ Screenshots
 -------------
 
 ![](https://github.com/eduardolundgren/sublime-jslint/raw/c5a217b50e8ef49aeca58d5ba386ea2e523d07c1/jslint/screenshot.png)
-![](https://github.com/eduardolundgren/sublime-jslint/raw/98f4f79a41333df65dd97bcdcb8d9d5f366d9fed/jslint/preview.png)
+![](https://github.com/eduardolundgren/sublime-jslint/raw/master/jslint/preview.png)
 
 Credits
 -------------
