@@ -5,7 +5,11 @@ JSLint is an indispensable tool if you're serious about your JavaScript code qua
 
 After modifying for your system, save the file to the default path Sublime Text 2 brings up in the save dialog and restart Sublime. Open up a .js file and hit CMD+B, or use Tools > Build. An inline prompt will appear giving you the JSLint results:
 
+Screenshots
+-------------
+
 ![](https://github.com/eduardolundgren/sublime-jslint/raw/c5a217b50e8ef49aeca58d5ba386ea2e523d07c1/jslint/screenshot.png)
+![](https://github.com/eduardolundgren/sublime-jslint/raw/98f4f79a41333df65dd97bcdcb8d9d5f366d9fed/jslint/preview.png)
 
 Credits
 -------------
