@@ -42,70 +42,64 @@ var report = function(data) {
 		unused = data.unused,
 		dUndefined = data['undefined'];
 
-	if (errors.length) {
-		pushln(repeat('=', 70));
-		pushln(
-			sub(HEADER_TPL, {
-				length: errors.length,
-				file: file
-			})
-		);
-		pushln(repeat('=', 70), 2);
+	if (errors) {
+		for (var i = 0; i < errors.length; i++) {
+			var data = errors[i];
 
-		if (errors) {
-			for (var i = 0; i < errors.length; i++) {
-				var data = errors[i];
+			data.evidence = trim(data.evidence);
+			data.file = file;
 
-				data.evidence = trim(data.evidence);
-				data.file = file;
-
-				pushln(sub(ERROR_TPL, data), 2);
-			}
-		}
-
-		if (globals) {
-			globals = globals.sort();
-
-			for (var i = 0; i < globals.length; i++) {
-				pushln(sub(GLOBALS_TPL, { name: globals[i] }), 1);
-			}
-		}
-
-		pushln('');
-
-		if (unused) {
-			for (var i = 0; i < unused.length; i++) {
-				var data = unused[i];
-
-				data.file = file;
-				data.type = 'Unused';
-
-				pushln(sub(VARIABLE_TPL, data));
-			}
-		}
-
-		pushln('');
-
-		if (dUndefined) {
-			for (var i = 0; i < dUndefined.length; i++) {
-				var data = dUndefined[i];
-
-				data.file = file;
-				data.type = 'Undefined';
-
-				pushln(sub(VARIABLE_TPL, data));
-			}
+			pushln(sub(ERROR_TPL, data), 2);
 		}
 	}
-	else {
-		pushln("No problems found.", 2);
+
+	if (globals) {
+		globals = globals.sort();
+
+		for (var i = 0; i < globals.length; i++) {
+			pushln(sub(GLOBALS_TPL, { name: globals[i] }), 1);
+		}
+	}
+
+	if (unused) {
+		pushln('');
+
+		for (var i = 0; i < unused.length; i++) {
+			var data = unused[i];
+
+			data.file = file;
+			data.type = 'Unused';
+
+			pushln(sub(VARIABLE_TPL, data));
+		}
+	}
+
+	if (dUndefined) {
+		pushln('');
+
+		for (var i = 0; i < dUndefined.length; i++) {
+			var data = dUndefined[i];
+
+			data.file = file;
+			data.type = 'Undefined';
+
+			pushln(sub(VARIABLE_TPL, data));
+		}
 	}
 
     return output.join('');
 };
 
-JSLINT(source, JSLINT_PREFS);
+var jslint = JSLINT(source, JSLINT_PREFS);
+var data = JSLINT.data();
 
-JSLINT.report(false);
+pushln(repeat('=', 70));
+pushln(
+	sub(HEADER_TPL, {
+		file: file,
+		length: data.errors ? data.errors.length : 0
+	})
+);
+pushln(repeat('=', 70), 2);
 
-print( report(JSLINT.data()) );
+print( report(data) );	
