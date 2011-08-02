@@ -1,5 +1,6 @@
 {
-   "cmd": ["java", "-jar", "$packages/sublime-jslint/jslint/js.jar", "$packages/sublime-jslint/jslint/main.js", "$file"],
+   "cmd": ["java", "-jar", "js.jar", "main.js", "$file"],
+   "file_regex": "file \\(([^)]+)\\).*line ([0-9]+)",
    "selector": "source.js",
-   "file_regex": "file \\(([^)]+)\\).*line ([0-9]+)"
+   "working_dir": "$packages/sublime-jslint/jslint/"
 }
