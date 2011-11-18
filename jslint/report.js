@@ -2,7 +2,7 @@ var Utils = require('./utils').Utils,
 	
 	STR_BLANK = '',
 
-	HEADER_TPL = 'JSLint found {length} problems:\nFile: {file}.',
+	HEADER_TPL = 'JSLint found {length} problems',
 
 	ERROR_TPL = 'ERROR: [Lint on file ({file}) at line {line} character {character}]: {reason}\n\t ===> {evidence}',
 
@@ -18,7 +18,6 @@ var report = function(file, data) {
 		unused = data.unused,
 		totalErrors = (errors ? errors.length : 0),
 		header = Utils.sub(HEADER_TPL, {
-			file: file,
 			length: totalErrors
 		});
 
@@ -69,8 +68,9 @@ var report = function(file, data) {
 	}
 
 	return {
-		totalErrors: totalErrors,
+		file: file,
 		log: buffer.join(STR_BLANK),
+		totalErrors: totalErrors,
 		shortlog: header
 	};
 };

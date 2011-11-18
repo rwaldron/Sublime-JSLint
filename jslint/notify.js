@@ -3,12 +3,12 @@ var exec = require('child_process').exec;
 var STR_BLANK = '',
 
 	Notifiers = {
-		'growlnotify': function(message, iconpath) {
+		'growlnotify': function(title, message, iconpath) {
 			exec('/usr/local/bin/growlnotify -m "' + message + '" --image=' + iconpath);
 		},
 
-		'notify-send': function(message, iconpath) {
-			exec('notify --icon=' + iconpath + ' ' + message);
+		'notify-send': function(title, message, iconpath) {
+			exec('notify-send --icon=' + iconpath + ' "' + title + '" "' + message + '"');
 		}
 	};
 
@@ -17,10 +17,10 @@ var notifier = null;
 var notify = function(report) {
 	var instance = this,
 		args = arguments,
-		iconpath = (report.totalErrors > 0) ? './images/error.png' : './images/success.png';
+		iconpath = __dirname + ((report.totalErrors > 0) ? '/images/error.png' : '/images/success.png');
 
 	if (notifier) {
-		notifier.call(instance, report.shortlog, iconpath);
+		notifier.call(instance, report.shortlog, report.file, iconpath);
 	}
 	else {
 		for (var notifierName in Notifiers) {
