@@ -8,8 +8,8 @@ After modifying for your system, save the file to the default path Sublime Text 
 Screenshots
 -------------
 
-![](https://github.com/eduardolundgren/sublime-jslint/raw/c5a217b50e8ef49aeca58d5ba386ea2e523d07c1/jslint/screenshot.png)
-![](https://github.com/eduardolundgren/sublime-jslint/raw/master/jslint/preview.png)
+![](https://github.com/eduardolundgren/sublime-jslint/raw/master/jslint/images/screenshot.png)
+![](https://github.com/eduardolundgren/sublime-jslint/raw/master/jslint/images/preview.png)
 
 Credits
 -------------

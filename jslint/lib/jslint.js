@@ -6943,3 +6943,5 @@ klass:              do {
     return itself;
 
 }());
+
+module.exports = JSLINT;
