@@ -12,6 +12,7 @@ module.exports = {
 	onevar: true,
 	plusplus: true,
 	regexp: true,
+	sloppy: true,
 	undef: true,
 	white: true
 };
