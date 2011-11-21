@@ -6,13 +6,17 @@ JSLint is an indispensable tool if you're serious about your JavaScript code qua
 Features
 -------------
 
-- Validate JSLint on save
+- Validate JSLint on Save
 
-- To get a full JSLint report press Super+Shift+Alt+L (JSLint: View Full Report command).
+- JSLint: Quick Check (Super+Shift+L)
 
-- JSLint Validation using NodeJS
+- JSLint: View Full Report (Super+Shift+Alt+L)
 
-- Notification support using Growl (http://growl.info/) on OSX and notify-send on Linux. Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
+- Using NodeJS
+
+- Notification Support
+	- Using Growl (http://growl.info/) on OSX and notify-send on Ubuntu/Linux.
+	- Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
 
 Requirements
 -------------
