@@ -8,6 +8,8 @@ Features
 
 - Validate JSLint on save
 
+- To get a full JSLint report press Ctrl+Shift+Alt+L (JSLint: View Full Report command).
+
 - JSLint Validation using NodeJS
 
 - Notification support using Growl (http://growl.info/) on OSX and notify-send on Linux. Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
