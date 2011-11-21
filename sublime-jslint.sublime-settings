@@ -1,5 +1,5 @@
 {
-	"result_file_regex": "file \\(([^)]+)\\)",
+	"result_file_regex": "file \\(([^)]+)\\).*line ([0-9]+)",
 
 	"result_line_regex": "line ([0-9]+)",
 
