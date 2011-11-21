@@ -17,7 +17,6 @@ How to use?
 
 	{
 		"node_path": "/usr/local/bin/node",
-
 		"notification_command": "/usr/bin/notify-send \"%(title)s\" \"%(msg)s\" --icon=\"%(image)s\""
 	}
 
