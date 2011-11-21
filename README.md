@@ -21,7 +21,7 @@ How to use?
 
 	Download the latest Growl version from http://growl.info/downloads, inside the .dmg file, go to "Extras" folder and install "growlnotify.pkg".
 
-- Make sure you update the "node_path" and "notification_command" on your system to the right paths. If you are using the default installation of OSX and Ubuntu they should work fine.
+- If you are not using the deafult paths from the recommended installation for growlnotify or notify-send, make sure you update the "node_path" and "notification_command" on your system to the right paths.
 
 	{
 		"node_path": "/usr/local/bin/node",
