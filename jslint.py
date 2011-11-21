@@ -36,8 +36,6 @@ class JslintCommand(sublime_plugin.TextCommand):
             if fn == '':
                 fn = self.view.file_name()
 
-            print get_settings_value("node_path")
-
             jslint = json.loads(os.popen(get_settings_value("node_path") + ' "%(linter)s" --%(log_level)s "%(file)s"' % {'linter': package_dir + '/linter.js', 'log_level': log_level, 'file': fn}).read())
 
             if log_level == 'all' or log_level == 'shortlog':
