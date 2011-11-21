@@ -13,6 +13,14 @@ Features
 How to use?
 -------------
 
+- If you are using Ubuntu install "notify-send" command line:
+
+	apt-get install libnotify-bin
+
+- If you are using OSX install "growlnotify" command line:
+
+	Download the latest Growl version from http://growl.info/downloads, inside the .dmg file, go to "Extras" folder and install "growlnotify.pkg".
+
 - Make sure you update the "node_path" and "notification_command" on your system to the right paths. If you are using the default installation of OSX and Ubuntu they should work fine.
 
 	{
