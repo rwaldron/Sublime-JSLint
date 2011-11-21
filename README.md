@@ -35,7 +35,7 @@ Requirements
 	
 	- Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
 
-	- Update the "node_path" and "notification_command" on your system to the right paths.
+	- Update the "node_path" and "notification_command" on your system to the right paths:
 
 	{
 		"node_path": "/usr/local/bin/node",
