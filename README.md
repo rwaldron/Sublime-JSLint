@@ -22,8 +22,8 @@ How to use?
 
 - Access via Command Palette (Ctrl+Shift+P) then search for:
 
-	JSLint: Quick Check (Ctrl+Shift+L)
-	JSLint: View Full Report (Ctrl+Shift+Alt+L)
+	- JSLint: Quick Check (Ctrl+Shift+L)
+	- JSLint: View Full Report (Ctrl+Shift+Alt+L)
 
 Open up a .js file and hit Ctrl+Shift+L for Quick Report and Ctrl+Shift+Alt+L. An inline prompt will appear giving you the JSLint results:
 
