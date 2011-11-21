@@ -1,0 +1,5 @@
+{
+	"node_path": "/usr/local/bin/node",
+
+	"notification_command": "/usr/local/bin/growlnotify -m \"%(msg)s\" -t \"%(title)s\" --image \"%(image)s\""
+}

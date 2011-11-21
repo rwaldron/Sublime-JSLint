@@ -1,6 +1,0 @@
-{
-   "cmd": ["/usr/local/bin/node", "linter.js", "--all", "$file"],
-   "file_regex": "file \\(([^)]+)\\).*line ([0-9]+)",
-   "selector": "source.js",
-   "working_dir": "$packages/sublime-jslint/jslint/"
-}

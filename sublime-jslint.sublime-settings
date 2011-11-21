@@ -1,0 +1,7 @@
+{
+	"result_file_regex": "file \\(([^)]+)\\)",
+
+	"result_line_regex": "line ([0-9]+)",
+
+	"show_notification_on_save": true
+}

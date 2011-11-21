@@ -1,6 +1,6 @@
-var Utils = require('./utils').Utils,
+var Utils = require('./utils').Utils;
 	
-	STR_BLANK = '',
+var STR_BLANK = '',
 
 	HEADER_TPL = 'JSLint found {length} problems',
 

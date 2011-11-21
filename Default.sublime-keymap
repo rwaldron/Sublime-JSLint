@@ -1,0 +1,4 @@
+[
+	{ "keys": ["ctrl+shift+l"], "command": "jslint", "args": { "log_level": "shortlog" } },
+	{ "keys": ["ctrl+shift+alt+l"], "command": "jslint", "args": { "log_level": "all" } }
+]

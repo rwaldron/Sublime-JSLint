@@ -1,0 +1,16 @@
+[
+	{
+		"caption": "JSLint: Quick Check",
+		"command": "jslint",
+		"args": {
+			"log_level": "shortlog"
+		}
+	},
+	{
+		"caption": "JSLint: View Full Report",
+		"command": "jslint",
+		"args": {
+			"log_level": "all"
+		}
+	}
+]
