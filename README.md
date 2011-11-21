@@ -6,6 +6,8 @@ JSLint is an indispensable tool if you're serious about your JavaScript code qua
 Features
 -------------
 
+- Validate JSLint on save
+
 - JSLint Validation using NodeJS
 
 - Notification support using Growl (http://growl.info/) on OSX and notify-send on Linux. Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
