@@ -3,19 +3,25 @@ Cross-Platform JSLint Support for Sublime Text Editor 2 (using NodeJS)
 
 JSLint is an indispensable tool if you're serious about your JavaScript code quality. This project provides a cross-platform script which helps Sublime Text 2 to check JSLint when you’re working within a JavaScript file.
 
-Features:
+Features
+-------------
 
-	Notification support using Growl (http://growl.info/) on OSX and notify-send on Linux. Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
+- JSLint Validation using NodeJS
 
-	Make sure you update the "node_path" and "notification_command" on your system to the right paths. If you are using the default installation of OSX and Ubuntu they should work fine.
+- Notification support using Growl (http://growl.info/) on OSX and notify-send on Linux. Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
 
-		{
-			"node_path": "/usr/local/bin/node",
+How to use?
+-------------
 
-			"notification_command": "/usr/bin/notify-send \"%(title)s\" \"%(msg)s\" --icon=\"%(image)s\""
-		}
+- Make sure you update the "node_path" and "notification_command" on your system to the right paths. If you are using the default installation of OSX and Ubuntu they should work fine.
 
-Added commands:
+	{
+		"node_path": "/usr/local/bin/node",
+
+		"notification_command": "/usr/bin/notify-send \"%(title)s\" \"%(msg)s\" --icon=\"%(image)s\""
+	}
+
+- Access via Command Palette (Ctrl+Shift+P) then search for:
 
 	JSLint: Quick Check (Ctrl+Shift+L)
 	JSLint: View Full Report (Ctrl+Shift+Alt+L)
@@ -27,3 +33,8 @@ Screenshots
 
 ![](https://github.com/eduardolundgren/sublime-jslint/raw/master/images/screenshot.png)
 ![](https://github.com/eduardolundgren/sublime-jslint/raw/master/images/preview.png)
+
+Changeset
+-------------
+
+Rhino is no longer being used as default engine due to performance issues, NodeJS (http://nodejs.org/) is now being used instead.
