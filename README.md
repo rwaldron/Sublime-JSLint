@@ -23,15 +23,15 @@ Requirements
 
 - You need to have NodeJS installed (http://nodejs.org/)
 
-- The notification needs "notify-send" command if you are using Ubuntu/Linux:
+- For Linux Users: Install "libnotify-bin" lib to enbale "notify-send" command:
 
-	# apt-get install libnotify-bin
+	- # apt-get install libnotify-bin
 
-- The notification needs "growlnotify" if you are using OSX:
+- For OSX Users: Install "growlnotify":
 
-	Download the latest Growl version from http://growl.info/downloads, inside the .dmg file, go to "Extras" folder and install "growlnotify.pkg".
+	- Download the latest Growl version from http://growl.info/downloads, inside the .dmg file, go to "Extras" folder and install "growlnotify.pkg".
 
-- Do not do this step if you are using the default installation for the other requirements specified in this section!
+- DO NOT DO THIS STEP IF YOU ARE USING THE DEFAULT INSTALLATION FOR THE REQUIREMENTS SPECIFIED IN THIS SECTION!
 	
 	- Update the "node_path" and "notification_command" on your system to the right paths.
 
