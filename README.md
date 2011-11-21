@@ -13,5 +13,5 @@ Open up a .js file and hit Ctrl+Shift+L for Quick Report and Ctrl+Shift+Alt+L. A
 Screenshots
 -------------
 
-![](https://github.com/eduardolundgren/sublime-jslint/raw/master/jslint/images/screenshot.png)
-![](https://github.com/eduardolundgren/sublime-jslint/raw/master/jslint/images/preview.png)
+![](https://github.com/eduardolundgren/sublime-jslint/raw/master/images/screenshot.png)
+![](https://github.com/eduardolundgren/sublime-jslint/raw/master/images/preview.png)
