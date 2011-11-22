@@ -33,7 +33,7 @@ Requirements
 
 - DO NOT DO THIS STEP IF YOU ARE USING THE DEFAULT INSTALLATION FOR THE REQUIREMENTS SPECIFIED IN THIS SECTION!
 	
-	- Those settings are configurable creating a User settings under your pagkage folder:  "Packages/User/Sublime-JSLint (Linux).sublime-settings", "Packages/User/Sublime-JSLint (OSX).sublime-settings", and "Packages/User/Sublime-JSLint (Windows).sublime-settings".
+	- Those settings are configurable creating overriding the properties under your user settings. To create a user settings create one or all of the following filenames suggestion on User folder inside the packages folder:  "Packages/User/Sublime-JSLint (Linux).sublime-settings", "Packages/User/Sublime-JSLint (OSX).sublime-settings", and "Packages/User/Sublime-JSLint (Windows).sublime-settings".
 
 	- Update the "node_path" and "notification_command" on your system to the right paths:
 
