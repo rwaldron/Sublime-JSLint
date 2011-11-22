@@ -16,7 +16,7 @@ Features
 
 - Notification Support
 	- Using Growl (http://growl.info/) on OSX and notify-send on Ubuntu/Linux.
-	- Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
+	- Those settings are configurable on "Sublime-JSLint (Linux).sublime-settings", "Sublime-JSLint (OSX).sublime-settings", and "Sublime-JSLint (Windows).sublime-settings".
 
 Requirements
 -------------
@@ -33,7 +33,7 @@ Requirements
 
 - DO NOT DO THIS STEP IF YOU ARE USING THE DEFAULT INSTALLATION FOR THE REQUIREMENTS SPECIFIED IN THIS SECTION!
 	
-	- Those settings are configurable on "sublime-jslint (Linux).sublime-settings", "sublime-jslint (OSX).sublime-settings", and "sublime-jslint (Windows).sublime-settings".
+	- Those settings are configurable on "Sublime-JSLint (Linux).sublime-settings", "Sublime-JSLint (OSX).sublime-settings", and "Sublime-JSLint (Windows).sublime-settings".
 
 	- Update the "node_path" and "notification_command" on your system to the right paths:
 
@@ -57,8 +57,8 @@ Open up a .js file and hit Super+Shift+L for Quick Report and Super+Shift+Alt+L.
 Screenshots
 -------------
 
-![](https://github.com/eduardolundgren/sublime-jslint/raw/master/images/screenshot.png)
-![](https://github.com/eduardolundgren/sublime-jslint/raw/master/images/preview.png)
+![](https://github.com/eduardolundgren/Sublime-JSLint/raw/master/images/screenshot.png)
+![](https://github.com/eduardolundgren/Sublime-JSLint/raw/master/images/preview.png)
 
 Changeset
 -------------

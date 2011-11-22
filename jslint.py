@@ -3,7 +3,7 @@ import sublime_plugin
 import os
 import json
 
-package = 'sublime-jslint'
+package = 'Sublime-JSLint'
 
 
 def get_settings_value(key):
